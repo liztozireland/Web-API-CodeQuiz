@@ -12,9 +12,12 @@ var isWin = false;
 var timer;
 var timerCount;
 
-var secondsLeft = 10;
+var lettersInChosenWord = [];
+var blanksLetters = [];
 
-function setTime(){
+
+
+function setTimer(){
     var timerInterval = setInterval(function() {
         secondsLeft--;
         timerElement.textContent = secondsLeft = " seconds left in game."
@@ -31,5 +34,5 @@ function sendMessage() {
     timeEl.textContent = " ";
   }
   
-  setTime();
+  setTimer();
   
