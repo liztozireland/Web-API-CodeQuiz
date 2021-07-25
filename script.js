@@ -12,27 +12,17 @@ var isWin = false;
 var timer;
 var timerCount;
 
-var lettersInChosenWord = [];
-var blanksLetters = [];
+var sec = 5;
+var time = setInterval(myTimer, 1000);
 
-
-
-function setTimer(){
-    var timerInterval = setInterval(function() {
-        secondsLeft--;
-        timerElement.textContent = secondsLeft = " seconds left in game."
-        if (secondsLeft === 0) {
-            clearInterval(timerInterval);
-            sendMessage();
-        }
+function myTimer() {
+    document.getElementById('timer').innerHTML = sec + " sec left";
+    sec--;
+    if (sec == -1) {
+        clearInterval(time);
+        
     }
-    
-    )
 }
 
-function sendMessage() {
-    timeEl.textContent = " ";
-  }
-  
-  setTimer();
-  
+
+resetButton.addEventListener("click", resetGame);
