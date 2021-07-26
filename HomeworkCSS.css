@@ -4,3 +4,32 @@ body {
     background-color: #eff5f8;
     color: #001b44;
   }
+  
+
+main{
+    background-color: gold;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+  }
+
+  .question1 {
+    font-size: 15px;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 16px;
+  }
+
+  .win-loss-container {
+    font-size: 15px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 16px;
+  }
+  .reset-button {
+    font-size: 16px;
+    height: 30px;
+    line-height: 8px;
+    margin: 20px;
+  }

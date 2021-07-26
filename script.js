@@ -12,17 +12,4 @@ var isWin = false;
 var timer;
 var timerCount;
 
-var sec = 5;
-var time = setInterval(myTimer, 1000);
 
-function myTimer() {
-    document.getElementById('timer').innerHTML = sec + " sec left";
-    sec--;
-    if (sec == -1) {
-        clearInterval(time);
-        
-    }
-}
-
-
-resetButton.addEventListener("click", resetGame);
